@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+</head>
+<style>
+    * {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .heading{
+        text-align: center;
+        color: red;
+    }
+    .Theme{
+        border: 2px solid black;
+        height: 400px;
+        width: auto;
+        
+    }
+    .sm{
+        border-radius: 50%;
+        margin: 10px;
+        float: right;
+        background-color: white;
+    }
+    img{
+        border-radius: 50%;
+    }
+    .bgmood{
+        position: absolute;
+        bottom: 50%;
+        left: 30%;
+    }
+    /* finding the number catagory css */
+
+    .container{
+        height: 400px;
+        border: 1px solid red;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .card{
+        border: 1px solid rgb(176, 176, 237);
+        height: 200px;
+        padding: 10px;
+        
+    }
+    .card:hover{
+         box-shadow: 5px 5px 10px blue;
+    }
+</style>
+<body>
+    <!-- work on theme changer -->
+   <div > <h1 class="heading">Here all the thing is accur using java script</h1></div>
+   <div class="Theme">
+    <div class="sm" onclick="theme()"><img id="mainimg" src="image/moon.jpg" alt="symbol" height="100" width="100"></div>
+    <div class="bgmood"><h1 class="bgco">This is light mood background theme</h1></div>
+   </div>
+
+   <!-- Finding the number catagory -->
+    <div class="container">
+        <div class="card">
+            <p>Enter the  number and choose the option.</p>
+            <input type="number">
+            <select id="city">
+                <option value="">Choose option</option>
+                <option value="Even_OR_Odd">Even OR Odd</option>
+                <option value="Armstrong">Armstrong</option>
+                <option value="Prime">Prime</option>
+                <p class="result"></p>
+            </select>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    // this script work for dark and light theme.
+
+    let bgcolor = document.getElementsByClassName("Theme")[0];
+    function theme() {
+        let img = document.getElementById("mainimg");
+        let text = document.getElementsByClassName("bgco")[0];
+
+        if (img.src.includes("moon.jpg")) {
+            img.src = "image/sun.jpg";
+            text.innerHTML = "This is the dark Background theme";
+            text.style.color = "white";
+            bgcolor.style.background = "grey";
+            
+        } else {
+            img.src = "image/moon.jpg";
+            text.style.color = "black";
+            text.innerHTML = "This is the light Background theme";
+            bgcolor.style.background = "white";
+        }
+    }
+
+</script>
+</html>
