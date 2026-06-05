@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>                         /*  Internal css */
+        body{
+            background-color: rgb(199, 225, 248);
+        }
+        h2{
+            text-align: center;
+            color: blue;                    /*  element selector */
+        }
+        .type{
+            border: 1px solid black;
+            display: flex;                   /*  class selector */
+            flex-direction: column;
+            align-items: center;
+        }
+        #main{
+            border-radius: 5px;  /*  id selector */
+        }
+        li{
+            font-size: 25px;
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p, dd{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: red;">CSS (Cascading Style Sheets)</h1> <!--inline css -->
+    <p style="text-align: center;">CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation and formatting of a document written in HTML or XML</p>
+    
+    <div class="type" id="main">
+        <h2>Type of Css</h2>
+        <ol>
+        <li>Inline css</li>
+        <li>Internal Css</li>
+        <li>External Css</li>
+    </ol>
+    <dl>
+        <li>Inline CSS: </li>
+        <dd>Styles are added directly to an HTML element using the style attribute. This is useful for unique, one-off style adjustments but makes the code harder to maintain if used extensively.</dd>
+        <li>Internal CSS:</li>
+        <dd> Uses a &lt;style&gt; element within the &lt;head&gt; section of the HTML document. 
+        This applies styles to that specific page only.</dd>
+        <li>External CSS:</li>
+        <dd> The recommended method for most projects, which involves linking a separate .css file to the HTML document using a <link> element. This allows a single CSS file to control the layout and appearance of multiple web pages at once.</dd>
+    </dl>
+</div>
+</body>
+</html>

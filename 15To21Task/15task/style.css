@@ -1,0 +1,21 @@
+.profile{
+    text-align: center;
+}
+.profile img{
+    border: 1px solid red;
+    border-radius: 50%;
+}
+h1{
+    color: red;
+}
+b{
+    color: rgb(94, 28, 6);
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

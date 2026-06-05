@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Responsive Landing Page</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      background: #333;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .main {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .main h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .main p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #45a049;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    @media (min-width: 768px) {
+      .main h1 {
+        font-size: 40px;
+      }
+
+      .main p {
+        font-size: 18px;
+      }
+       .main-img {
+      width: 100px;
+      height: 100px;
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>My Responsive Landing Page</h2>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="main">
+   <picture>
+      <source media="(min-width: 1024px)" srcset="/img/img.jpg" wi>
+
+      <source media="(min-width: 600px)" srcset="/img/img.jpg">
+
+      <img src="/img/img.jpg" alt="Device Image" width="100%">
+    </picture>
+
+    <h1>Welcome to Our Website</h1>
+    <p>Learn Web Development Anytime, Anywhere</p>
+    <button class="btn">Get Started</button>
+
+  </section>
+
+  <footer>
+    <p>© 2026 My Website</p>
+  </footer>
+
+</body>
+</html>

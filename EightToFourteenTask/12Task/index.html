@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Accessible Login Page</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#f4f4f4;
+margin:0;
+}
+
+header{
+background:rgb(227, 171, 0);
+color:white;
+text-align:center;
+padding:20px;
+}
+
+main{
+display:flex;
+justify-content:center;
+align-items:center;
+height:70vh;
+}
+
+.login-box{
+background:white;
+padding:25px;
+width:300px;
+border-radius:8px;
+box-shadow:0 0 10px gray;
+}
+
+label{
+display:block;
+margin-top:10px;
+}
+
+input{
+width:100%;
+padding:8px;
+margin-top:5px;
+}
+
+button{
+margin-top:15px;
+width:100%;
+padding:10px;
+background:green;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+    padding:10px;
+    background:#222;
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Satvik Rasoi</h1>
+</header>
+
+<main>
+
+<section class="login-box" aria-labelledby="login-title">
+
+<h2 id="login-title">Login</h2>
+
+<img src="/img/logo.png" alt="Satvik Rasoi Logo" width="80">
+
+<form aria-label="Login Form">
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+<label for="password">Password</label>
+<input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+<button type="submit" aria-label="Login Button">Login</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Satvik Rasoi</p>
+</footer>
+
+</body>
+</html>

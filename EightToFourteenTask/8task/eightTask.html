@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multimedia Webpage</title>
+</head>
+
+<body style="font-family: Arial; background-color:gainsboro;" id="mainBody">
+    <h1 class="heading" title="Multimedia Page Example">My Multimedia Webpage</h1>
+    <section id="videoSection" class="section">
+        <h2>Embedded YouTube Video</h2>
+        <iframe width="400" height="250"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            title="YouTube video player">
+        </iframe>
+    </section>
+    <hr>
+    <section id="htmlVideo" class="section" data-type="localVideo">
+        <h2>HTML5 Video</h2>
+        <video width="400" controls title="Sample Video">
+            <source src="https://www.youtube.com/shorts/qT_OeqrMtU8" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+    <hr>
+    <section id="audioSection" class="section">
+        <h2>Audio Player</h2>
+        <audio controls title="Sample Audio">
+            <source src="audio.wav" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+    </section>
+    <hr>
+    <section id="progressSection" class="section">
+        <h2>Download Progress</h2>
+        <label>Downloading File:</label><br>
+        <progress value="60" max="100"></progress>
+    </section>
+    <hr>
+    <section id="meterSection" class="section">
+        <h2>Battery Level</h2>
+        <label>Battery:</label><br>
+        <meter value="0.7">70%</meter>
+    </section>
+</body>
+</html>
