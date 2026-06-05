@@ -43,12 +43,13 @@
         margin-top: 10px;
         display: flex;
         justify-content: center;
+        align-items: center;
         
     }
     .card{
         border: 1px solid rgb(176, 176, 237);
         height: 200px;
-        padding: 10px;
+        padding: 20px;
         
     }
     .card:hover{
@@ -66,41 +67,18 @@
    <!-- Finding the number catagory -->
     <div class="container">
         <div class="card">
-            <p>Enter the  number and choose the option.</p>
-            <input type="number">
-            <select id="city">
-                <option value="">Choose option</option>
+            <p><b>Enter the  number and choose the option.</b></p>
+            <input id="numbox" type="number">
+            <select id="numberCatagory">
                 <option value="Even_OR_Odd">Even OR Odd</option>
                 <option value="Armstrong">Armstrong</option>
                 <option value="Prime">Prime</option>
-                <p class="result"></p>
             </select>
-
+            <button onclick="checkNum()">Check</button>
+            <p class="result"></p>
         </div>
     </div>
 
 </body>
-<script>
-    // this script work for dark and light theme.
-
-    let bgcolor = document.getElementsByClassName("Theme")[0];
-    function theme() {
-        let img = document.getElementById("mainimg");
-        let text = document.getElementsByClassName("bgco")[0];
-
-        if (img.src.includes("moon.jpg")) {
-            img.src = "image/sun.jpg";
-            text.innerHTML = "This is the dark Background theme";
-            text.style.color = "white";
-            bgcolor.style.background = "grey";
-            
-        } else {
-            img.src = "image/moon.jpg";
-            text.style.color = "black";
-            text.innerHTML = "This is the light Background theme";
-            bgcolor.style.background = "white";
-        }
-    }
-
-</script>
+<script src="index.js"></script>
 </html>
